@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - FitTree International</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="https://fittreeinternational.com/assets/images/logo.png" width="50" alt="FitTree Logo">
+                <span class="navbar-brand-text">FitTree International</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto align-items-center gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu border-0 shadow-lg rounded-3 mt-2">
+                            <li><a class="dropdown-item py-2" href="#">Spices</a></li>
+                            <li><a class="dropdown-item py-2" href="#">Rice</a></li>
+                            <li><a class="dropdown-item py-2" href="#">Oil Seeds</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-nav-contact" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-white py-5 shadow-sm">
+        <div class="container text-center">
+            <h1 class="display-5 fw-bold" style="color: #002F49;">Our Premium Products</h1>
+            <p class="lead text-secondary mb-4">Explore our wide range of organic and conventional agro products.</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="position-relative">
+                        <input type="text" id="searchInput" class="form-control product-search-input" placeholder="Search for Peanuts, Cumin, Rice...">
+                        <i class="fas fa-search position-absolute top-50 end-0 translate-middle-y me-4 text-muted"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="row g-4" id="productGrid">
+
+            <div class="col-md-4 col-sm-6 product-item">
+                <div class="card product-card">
+                    <div class="product-img-wrapper">
+                        <img src="https://fittreeinternational.com/assets/images/product/oli.png" alt="Peanuts">
+                    </div>
+                    <div class="card-body p-4">
+                        <span class="product-badge mb-2 d-inline-block">Oil Seeds</span>
+                        <h4 class="fw-bold product-title" style="color: #002F49;">Premium Peanuts</h4>
+                        <p class="text-secondary small">High-quality Java and Bold variety peanuts. Rich in protein and ethically sourced.</p>
+                        <a href="contact.html" class="btn btn-outline-dark btn-sm rounded-pill w-100">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 product-item">
+                <div class="card product-card">
+                    <div class="product-img-wrapper">
+                        <img src="https://fittreeinternational.com/assets/images/product/oli2.png" alt="Sesame Seeds">
+                    </div>
+                    <div class="card-body p-4">
+                        <span class="product-badge mb-2 d-inline-block">Oil Seeds</span>
+                        <h4 class="fw-bold product-title" style="color: #002F49;">Natural Sesame Seeds</h4>
+                        <p class="text-secondary small">99.95% purity natural white sesame seeds. Perfect for bakery and oil extraction.</p>
+                        <a href="contact.html" class="btn btn-outline-dark btn-sm rounded-pill w-100">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 product-item">
+                <div class="card product-card">
+                    <div class="product-img-wrapper">
+                        <img src="https://fittreeinternational.com/assets/images/product/oli8.png" alt="Cumin Seeds">
+                    </div>
+                    <div class="card-body p-4">
+                        <span class="product-badge mb-2 d-inline-block">Spices</span>
+                        <h4 class="fw-bold product-title" style="color: #002F49;">Sunflower Seeds</h4>
+                        <p class="text-secondary small">Aromatic Singapore and Europe quality Sunflower seeds with high volatile oil content.</p>
+                        <a href="contact.html" class="btn btn-outline-dark btn-sm rounded-pill w-100">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 product-item">
+                <div class="card product-card">
+                    <div class="product-img-wrapper">
+                        <img src="https://fittreeinternational.com/assets/images/product/rice1.png" alt="Basmati Rice">
+                    </div>
+                    <div class="card-body p-4">
+                        <span class="product-badge mb-2 d-inline-block">Rice</span>
+                        <h4 class="fw-bold product-title" style="color: #002F49;">Basmati Rice</h4>
+                        <p class="text-secondary small">Long grain, aromatic Indian Basmati rice. Aged to perfection for the best taste.</p>
+                        <a href="contact.html" class="btn btn-outline-dark btn-sm rounded-pill w-100">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 product-item">
+                <div class="card product-card">
+                    <div class="product-img-wrapper">
+                        <img src="https://fittreeinternational.com/assets/images/product/spices7.png"  alt="Black Pepper">
+                    </div>
+                    <div class="card-body p-4">
+                        <span class="product-badge mb-2 d-inline-block">Spices</span>
+                        <h4 class="fw-bold product-title" style="color: #002F49;">Black Pepper</h4>
+                        <p class="text-secondary small">Bold black peppercorns from Malabar. High pungency and rich aroma.</p>
+                        <a href="contact.html" class="btn btn-outline-dark btn-sm rounded-pill w-100">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 product-item">
+                <div class="card product-card">
+                    <div class="product-img-wrapper">
+                        <img src="https://fittreeinternational.com/assets/images/product/spices4.png" alt="Moringa Powder">
+                    </div>
+                    <div class="card-body p-4">
+                        <span class="product-badge mb-2 d-inline-block">Superfood</span>
+                        <h4 class="fw-bold product-title" style="color: #002F49;">Turmeric Powder</h4>
+                        <p class="text-secondary small">100% Organic certified Turmeric powder. Rich in antioxidants and nutrients.</p>
+                        <a href="contact.html" class="btn btn-outline-dark btn-sm rounded-pill w-100">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="fittree-footer pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-white rounded-circle d-flex align-items-center justify-content-center p-2 me-3" style="width: 80px; height: 80px;">
+                            <img src="https://fittreeinternational.com/assets/images/logo.png" alt="FitTree Logo" class="img-fluid">
+                        </div>
+                        <div class="text-white lh-1">
+                            <h4 class="fw-bold mb-0">FitTree</h4>
+                            <span class="fs-5">International LLP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading mb-4 text-white fw-bold">Your Trust Is Our Ride</h4>
+                    <p class="text-white small lh-lg">FitTree International is the producer of high quality spices (whole/powder), oil seeds and indian basmati rice.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading mb-4 text-white fw-bold">Get in touch..</h4>
+                    <p class="text-white small mb-2">Surat-395010, Gujarat, India</p>
+                    <p class="text-white small mb-2">+91 8320166771</p>
+                    <p class="text-white small mb-3">info@fittreeinternational.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading mb-4 text-white fw-bold">Follow Us</h4>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="opacity-25 mt-4">
+            <p class="text-center text-white small opacity-75">&copy; 2025 FitTree International LLP.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Simple Search Filter Script
+        document.getElementById('searchInput').addEventListener('keyup', function() {
+            let filter = this.value.toLowerCase();
+            let products = document.querySelectorAll('.product-item');
+
+            products.forEach(function(item) {
+                let title = item.querySelector('.product-title').innerText.toLowerCase();
+                let badge = item.querySelector('.product-badge').innerText.toLowerCase();
+                
+                if (title.includes(filter) || badge.includes(filter)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitTree International - Premium Agro Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://fittreeinternational.com/assets/images/logo.png">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="https://fittreeinternational.com/assets/images/logo.png" width="50" alt="FitTree Logo">
+                <span class="navbar-brand-text ">FitTree International</span>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto align-items-center gap-3">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu border-0 shadow-lg rounded-3 mt-2">
+                            <li><a class="dropdown-item py-2" href="products.html">Spices</a></li>
+                            <li><a class="dropdown-item py-2" href="products.html">Rice</a></li>
+                            <li><a class="dropdown-item py-2" href="products.html">Oil Seeds</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item fw-bold text-orange" href="products.html">View All</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link btn-nav-contact" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="hero-section pt-4">
+        <div class="container col-xxl-10 px-4">
+            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-3">
+                            <div class="col-lg-6">
+                                <img src="https://fittreeinternational.com/assets/images/home1.png" class="d-block mx-lg-auto img-fluid shadow-lg" alt="Farmers">
+                            </div>
+                            <div class="col-lg-6">
+                                <span class="badge-custom mb-3 d-inline-block">FitTree International LLP</span>
+                                <h1 class="display-5 fw-bold lh-1 mb-4 hero-title">Premium Indian Spices & Agro Products.</h1>
+                                <p class="lead text-secondary mb-4">Bridging the gap between Indian farmers and global buyers using world-class manufacturing facilities.</p>
+                                <a href="products.html" class="btn btn-nav-contact btn-lg px-4">View Products</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-3">
+                            <div class="col-lg-6">
+                                <img src="https://fittreeinternational.com/assets/images/home2.png" class="d-block mx-lg-auto img-fluid shadow-lg" alt="Global Network">
+                            </div>
+                            <div class="col-lg-6">
+                                <span class="badge-custom mb-3 d-inline-block">Global Export Network</span>
+                                <h1 class="display-5 fw-bold lh-1 mb-4 hero-title">Delivering Excellence Across the Globe.</h1>
+                                <p class="lead text-secondary mb-4">We ensure the highest quality from procurement to delivery, adhering to EU & USDA standards.</p>
+                                <a href="contact.html" class="btn btn-nav-contact btn-lg px-4">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-3">
+                            <div class="col-lg-6">
+                                <img src="https://img.freepik.com/free-vector/organic-farming-concept-illustration_114360-1296.jpg" class="d-block mx-lg-auto img-fluid shadow-lg" alt="Organic Farming">
+                            </div>
+                            <div class="col-lg-6">
+                                <span class="badge-custom mb-3 d-inline-block">Certified Organic</span>
+                                <h1 class="display-5 fw-bold lh-1 mb-4 hero-title">100% Natural & Chemical Free.</h1>
+                                <p class="lead text-secondary mb-4">Our products are cultivated using sustainable farming practices, ensuring health and taste in every bite.</p>
+                                <a href="products.html" class="btn btn-nav-contact btn-lg px-4">See Catalog</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" id="about" style="background-color: #f9fbfd;">
+        <div class="container">
+            <div class="row flex-lg-row-reverse align-items-center g-5">
+                <div class="col-lg-6">
+                    <h6 class="text-uppercase fw-bold" style="color: #D65A16; letter-spacing: 2px;">Who We Are</h6>
+                    <h2 class="display-6 fw-bold mb-4" style="color: #002F49;">Your Trust is Our Pride.</h2>
+                    <p class="text-secondary mb-4">
+                        FitTree International produces high-quality conventional and organic agricultural products. 
+                        We work closely with over <strong>12,000 farmers</strong> to grow, harvest, and process the yield in world-class certified manufacturing units.
+                    </p>
+                    <div class="d-flex gap-4 mt-4">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle fa-2x me-3" style="color: #D65A16;"></i>
+                            <div>
+                                <h6 class="fw-bold mb-0">100% Organic</h6>
+                                <small class="text-muted">Certified Products</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-globe-americas fa-2x me-3" style="color: #D65A16;"></i>
+                            <div>
+                                <h6 class="fw-bold mb-0">Global Reach</h6>
+                                <small class="text-muted">Export Quality</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://fittreeinternational.com/assets/images/home_banner.png" class="d-block mx-lg-auto img-fluid rounded-4 shadow" alt="About FitTree">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="section-title h1">How do we do it?</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-3 col-md-6 text-center text-lg-end">
+                    
+                    <div class="process-item mb-5">
+                        <div class="d-inline-flex justify-content-center justify-content-lg-end w-100">
+                            <div class="process-icon-box">
+                                <img src="https://fittreeinternational.com/assets/images/tree1.png" width="35" alt="">
+                            </div>
+                        </div>
+                        <h4 class="h5 fw-bold text-dark">Procurement</h4>
+                        <p class="small text-muted">High quality raw materials. Ethically sourced from farmers.</p>
+                    </div>
+
+                    <div class="process-item">
+                        <div class="d-inline-flex justify-content-center justify-content-lg-end w-100">
+                            <div class="process-icon-box">
+                                <i class="fas fa-print"></i>
+                            </div>
+                        </div>
+                        <h4 class="h5 fw-bold text-dark">Private Labelling</h4>
+                        <p class="small text-muted">Quick, inexpensive, and high-quality private labeling service.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 text-center my-4 my-lg-0">
+                    <img src="https://fittreeinternational.com/assets/images/tree.png" alt="Process Tree" class="img-fluid" style="max-height: 500px;">
+                </div>
+
+                <div class="col-lg-3 col-md-6 text-center text-lg-start">
+                    
+                    <div class="process-item mb-5">
+                        <div class="d-inline-flex justify-content-center justify-content-lg-start w-100">
+                            <div class="process-icon-box">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                        </div>
+                        <h4 class="h5 fw-bold text-dark">Manufacturing</h4>
+                        <p class="small text-muted">World-class facilities. No human touch. Free from pathogens.</p>
+                    </div>
+
+                    <div class="process-item">
+                        <div class="d-inline-flex justify-content-center justify-content-lg-start w-100">
+                            <div class="process-icon-box">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                        </div>
+                        <h4 class="h5 fw-bold text-dark">Logistics</h4>
+                        <p class="small text-muted">Shipping products to your desired ports worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title h1">Certifications of Quality</h2>
+                <div class="title-underline"></div>
+                <p class="text-muted">We adhere to the highest global standards.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="cert-card" title="APEDA Certified">
+                        <img src="i1.png" alt="APEDA">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="cert-card" title="FDA Approved">
+                        <img src="i2.png" alt="FDA">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="cert-card" title="Spices Board India">
+                        <img src="i3.png" alt="Spices Board">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="cert-card" title="USDA Organic">
+                        <img src="i4.png" alt="USDA">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4">
+                    <div class="cert-card" title="Halal Certified">
+                        <img src="i5.png" alt="Halal">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4">
+                    <div class="cert-card" title="BRC Global Standards">
+                        <img src="i6.png" alt="BRC">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4">
+                    <div class="cert-card" title="BRC Global Standards">
+                        <img src="i7.png" alt="BRC">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="fittree-footer pt-5 pb-2">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class=" rounded-circle p-2 me-3 shadow-sm" style="width: 70px; height: 70px; display: grid; place-items: center;">
+                            <img src="https://fittreeinternational.com/assets/images/logo.png" alt="FitTree Logo" class="img-fluid">
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-0 text-white">FitTree</h5>
+                            <small class="text-white-50">International LLP</small>
+                        </div>
+                    </div>
+                    <p class="small text-white opacity-75">
+                        Producer of high quality spices, oil seeds and indian basmati rice. Working with 12,000+ farmers.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4 text-white">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="#about" class="text-white text-decoration-none small">About Us</a></li>
+                        <li class="mb-2"><a href="products.html" class="text-white text-decoration-none small">Our Products</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none small">Market Research</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none small">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4 text-white">Get In Touch</h5>
+                    <div class="d-flex mb-3">
+                        <i class="fas fa-map-marker-alt mt-1 me-3 opacity-75"></i>
+                        <p class="small mb-0 text-white">Surat-395010, Gujarat, India</p>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <i class="fas fa-phone-alt mt-1 me-3 opacity-75"></i>
+                        <p class="small mb-0 text-white">+91 8320166771</p>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <i class="fas fa-envelope mt-1 me-3 opacity-75"></i>
+                        <p class="small mb-0 text-white">info@fittreeinternational.com</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4 text-white">Follow Us</h5>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="opacity-25">
+            <div class="text-center py-3">
+                <small class="text-white opacity-75">&copy; 2025 FitTree International LLP. All Rights Reserved.</small>
+            </div>
+        </div>
+
+        <a href="#" class="position-fixed bottom-0 end-0 m-4 shadow-lg rounded-circle bg-success text-white d-flex align-items-center justify-content-center" 
+           style="width: 60px; height: 60px; z-index: 1000; text-decoration: none;">
+            <i class="fab fa-whatsapp fa-2x"></i>
+        </a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

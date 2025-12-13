@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page - FitTree</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Contact-Specific Overrides */
+        .contact-section {
+            background-image: linear-gradient(rgba(0, 47, 73, 0.7), rgba(0, 47, 73, 0.7)), url('https://fittreeinternational.com/assets/images/con-bg.png');
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .glass-form {
+            background-color: rgba(255, 255, 255, 0.9); 
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .form-control:focus, .form-select:focus {
+            border-color: #D65A16;
+            box-shadow: 0 0 0 0.25rem rgba(214, 90, 22, 0.25);
+        }
+    </style>
+</head>
+
+<body>
+
+   <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="https://fittreeinternational.com/assets/images/logo.png" width="50" alt="FitTree Logo">
+                <span class="navbar-brand-text">FitTree International</span>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto align-items-center gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu border-0 shadow-lg rounded-3 mt-2">
+                            <li><a class="dropdown-item py-2" href="products.html">Spices</a></li>
+                            <li><a class="dropdown-item py-2" href="products.html">Rice</a></li>
+                            <li><a class="dropdown-item py-2" href="products.html">Oil Seeds</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item fw-bold text-orange" href="products.html">View All</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link btn-nav-contact active" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contact-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+
+                    <div class="text-center mb-5">
+                        <h1 class="fw-bold display-4 text-white">Contact Us</h1>
+                        <p class="text-white-50 fs-5">Interested in our products? Let's start a conversation.</p>
+                    </div>
+
+                    <div id="successMessage" class="alert alert-success d-none shadow" role="alert">
+                        <i class="fas fa-check-circle me-2"></i> Thank you! Your inquiry has been sent successfully.
+                    </div>
+
+                    <form id="contactForm" class="p-5 rounded-4 shadow-lg glass-form">
+                        
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Name" required>
+                            <label for="name"><i class="fas fa-user me-2 text-secondary"></i>Full Name</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                            <label for="email"><i class="fas fa-envelope me-2 text-secondary"></i>Email Address</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control" id="phone" placeholder="Phone" required>
+                            <label for="phone"><i class="fas fa-phone me-2 text-secondary"></i>Contact Number</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="product" required>
+                                <option value="" selected disabled>Select a product...</option>
+                                <option value="Peanuts">Peanuts</option>
+                                <option value="Sesame Seeds">Sesame Seeds</option>
+                                <option value="Spices">Spices</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <label for="product"><i class="fas fa-box-open me-2 text-secondary"></i>Product Interested In</label>
+                        </div>
+
+                        <div class="form-floating mb-4">
+                            <textarea class="form-control" placeholder="Message" id="message" style="height: 120px" required></textarea>
+                            <label for="message"><i class="fas fa-comment me-2 text-secondary"></i>Your Message</label>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-nav-contact btn-lg rounded-pill w-100">
+                                Send Inquiry <i class="fas fa-paper-plane ms-2"></i>
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="fittree-footer pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-white rounded-circle d-flex align-items-center justify-content-center p-2 me-3" style="width: 80px; height: 80px;">
+                            <img src="https://fittreeinternational.com/assets/images/logo.png" alt="FitTree Logo" class="img-fluid">
+                        </div>
+                        <div class="text-white lh-1">
+                            <h4 class="fw-bold mb-0">FitTree</h4>
+                            <span class="fs-5">International LLP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading mb-4 text-white fw-bold">Your Trust Is Our Ride</h4>
+                    <p class="text-white small lh-lg">FitTree International is the producer of high quality spices (whole/powder), oil seeds and indian basmati rice.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading mb-4 text-white fw-bold">Get in touch..</h4>
+                    <p class="text-white small mb-2">Surat-395010, Gujarat, India</p>
+                    <p class="text-white small mb-2">+91 8320166771</p>
+                    <p class="text-white small mb-3">info@fittreeinternational.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading mb-4 text-white fw-bold">Follow Us</h4>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="opacity-25 mt-4">
+            <p class="text-center text-white small opacity-75">&copy; 2025 FitTree International LLP.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            document.getElementById('successMessage').classList.remove('d-none');
+            document.getElementById('contactForm').reset();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

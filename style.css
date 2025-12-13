@@ -1,0 +1,233 @@
+/* === 1. GLOBAL SETTINGS & TYPOGRAPHY === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary-blue: #002F49;
+    --primary-orange: #D65A16;
+    --light-bg: #F8F9FA;
+    --text-dark: #1A1A1A;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.7;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+html { scroll-behavior: smooth; }
+
+/* === 2. NAVBAR (Glassmorphism) === */
+.navbar {
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05) !important;
+    padding: 15px 0;
+}
+
+.navbar-brand-text {
+    color: var(--primary-blue);
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    color: var(--primary-blue) !important;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: all 0.3s;
+}
+
+
+
+.btn-nav-contact {
+    background: var(--primary-orange);
+    color: #fff !important;
+    padding: 10px 25px !important;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+
+.btn-nav-contact:hover {
+    background: #b54a12;
+    transform: translateY(-2px);
+}
+
+/* === 3. HERO SECTION === */
+.hero-section {
+    padding-bottom: 3rem;
+    background: #fff;
+}
+
+.carousel-item img {
+    filter: brightness(0.95); 
+    border-radius: 20px;
+}
+
+.hero-title {
+    color: var(--primary-blue);
+    font-weight: 800;
+}
+
+.badge-custom {
+    color: var(--primary-orange);
+    background: #fff5f0;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* === 4. PROCESS SECTION (Fixed Icons) === */
+.section-title {
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+
+.title-underline {
+    height: 4px;
+    width: 60px;
+    background: var(--primary-orange);
+    border-radius: 2px;
+    margin: 15px auto;
+}
+
+/* Circular Icon Box */
+.process-icon-box {
+    width: 70px;
+    height: 70px;
+    background: rgba(214, 90, 22, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: var(--primary-orange);
+    font-size: 1.8rem;
+    transition: all 0.3s;
+}
+
+.process-item:hover .process-icon-box {
+    /* background: var(--primary-orange); */
+    /* color: #fff; */
+    transform: scale(1.1);
+}
+
+/* === 5. CERTIFICATIONS GRID (Fixed Images) === */
+.cert-card {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 1rem;
+    border-radius: 12px;
+    height: 120px; /* Fixed height for uniformity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-orange);
+    box-shadow: 0 10px 25px rgba(214, 90, 22, 0.15);
+}
+
+.cert-card img {
+    max-height: 70px; /* Ensures logos fit */
+    max-width: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+.cert-card:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* === 6. PRODUCTS PAGE === */
+.product-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.product-img-wrapper {
+    height: 220px;
+    overflow: hidden;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-img-wrapper img {
+    transform: scale(1.1);
+}
+
+.product-badge {
+    background: var(--primary-orange);
+    color: white;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* === 7. FOOTER & CONTACT === */
+.fittree-footer {
+    background: linear-gradient(135deg, #FA742B 0%, #d65a16 100%);
+    color: #fff;
+}
+
+.social-icon {
+    width: 38px;
+    height: 38px;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.social-icon:hover {
+    background: #fff;
+    color: var(--primary-orange);
+}
+
+/* Contact Page Background */
+.contact-section {
+    background: linear-gradient(rgba(0, 47, 73, 0.8), rgba(0, 47, 73, 0.8)), url('https://fittreeinternational.com/assets/images/con-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.glass-form {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+}
